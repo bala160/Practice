@@ -1,0 +1,56 @@
+
+Multitasking:
+
+1. process based multitasking  --  multiple programing at same time
+2. Thread based multitasking  --- single program doing multiple task.
+
+Eg : process based --  multiple application opened and work.
+     Thread based  --  In mail we are typing a content it will suggest to autocorrect some words.
+
+
+Threads vs Process:
+
+1. Two threads share the same address space.
+2. Context switching between threads is usually less expensive than between process.
+3. The cost of communication between threads is relatively low.
+
+Why Multithreading:
+
+1. In single threaded environment, only one task at a time can be performed.
+2. CPU cycles are wasted, for eg, when waiting for user input.
+3. Multitasking allows idle CPU time to be put to good use.
+
+Thread:
+
+1. A thread is an independent sequential path of execution within a program.
+2. Many threads can run concurrently within a program.
+3. At runtime, threads in a program exists in a common memory space and can, therefore, share both data and code.
+4. They also share the process running the program.
+
+The Main Thread:
+
+1. When a standalone application is run, a user thread is automatically created to execute the main() method
+of application. This thread is called the main thread.
+
+2. If no other user threads are spawned(Created), the program terminates when the main() method
+finishes executing.
+
+3. All other threads, called child threads, are spawned from the main thread.
+
+4. The main() method can then finish, but the program will keep running until all user
+thread have completed.
+
+5. The runtime environment distinguishes(difference) between user threads and daemon threads.
+
+6. Calling the setDaemon(boolean) method in the Thread class marks the status of the thread as either daemon or user, but
+this must be done before the thread is started.
+
+7. As long as a user thread is alive, the JVM does not terminate.
+
+8. A daemon thread is at the mercy of the runtime system: it is stopped if there are no more
+user threads running, thus terminating the program.
+
+Thread Creation:
+
+1. Implementing the java.lang.Runnable interface
+2. Extending the java.lang.Thread class

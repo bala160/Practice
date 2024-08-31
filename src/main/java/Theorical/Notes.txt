@@ -1,0 +1,14 @@
+
+--------------------Java Interview Preparation--------------------------
+
+--------------------Date : 13-08-2024------------------------------
+
+* Definition of PSVM
+* Primitive and Non Primitive data types
+* Wrapper class
+--Use Integer when you need to work with collections, need nullability, are working with frameworks that require objects, or when dealing with custom data structures that need to hold objects.
+--Use int when performance is critical, and you don't need nullability or the features provided by objects.
+* Autoboxing and Unboxing
+* try-catch-finally
+
+--------------------Date : 14-08-2024------------------------------
